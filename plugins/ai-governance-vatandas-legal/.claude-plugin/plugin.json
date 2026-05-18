@@ -1,0 +1,67 @@
+{
+  "name": "ai-governance-vatandas-legal",
+  "displayName": "AI Governance — Vatandaş Versiyonu (TR)",
+  "version": "1.0.0",
+  "description": "Türk vatandaşının AI ekosisteminde KVKK, FSEK, TKHK, MÖHUK ve SMK haklarını sistematik kullanması için yeniden inşa edilmiş AI governance eklentisi. Otomatik karar itirazı, eser AI eğitim opt-out, deepfake/ses klonu hukuki yol haritası, platform TOS tüketici denetimi, KVKK Kurul emsal sweeper.",
+  "author": {
+    "name": "Abdullah",
+    "email": "theakambio@gmail.com"
+  },
+  "license": "kişisel kullanım",
+  "category": "legal",
+  "tags": ["KVKK", "FSEK", "AI", "yapay-zekâ", "vatandaş", "müzisyen", "telif", "deepfake", "otomatik-karar", "TR", "Türkçe"],
+  "homepage": "lokal — git'e yüklenmemiş",
+  "dependencies": {
+    "mcp": {
+      "required": ["yargi_mcp", "mevzuat_mcp", "hukuk_rag"],
+      "recommended": ["literatur_mcp", "yoktez_mcp", "markapatent_mcp"],
+      "optional": ["scheduled-tasks", "cowork"]
+    },
+    "skills_external": {
+      "turk-hukuk-legal": "cross-skill handoff için — kurulu olması tavsiye edilir"
+    }
+  },
+  "commands": [
+    "cold-start-interview",
+    "customize",
+    "matter-workspace",
+    "ai-temas-envanteri",
+    "otomatik-karar-itirazi",
+    "eserim-ai-training",
+    "platform-ai-tos-inceleme",
+    "kvkk-veri-itirazi",
+    "ai-uretim-icerik-tespit",
+    "mevzuat-degisiklik-takibi",
+    "kisisel-ai-politika"
+  ],
+  "skills": [
+    "cold-start-interview",
+    "customize",
+    "matter-workspace",
+    "ai-temas-envanteri",
+    "otomatik-karar-itirazi",
+    "eserim-ai-training",
+    "platform-ai-tos-inceleme",
+    "kvkk-veri-itirazi",
+    "ai-uretim-icerik-tespit",
+    "mevzuat-degisiklik-takibi",
+    "kisisel-ai-politika"
+  ],
+  "agents": [
+    "tos-degisiklik-watcher",
+    "kvkk-kurul-kararlari-sweeper",
+    "sure-takipcisi"
+  ],
+  "hooks": [
+    "kisisel-veri-anonimlestirme-prehook"
+  ],
+  "config": {
+    "configPath": "~/.claude/plugins/config/claude-for-legal/ai-governance-legal/",
+    "sharedProfilePath": "~/.claude/plugins/config/claude-for-legal/company-profile.md",
+    "outputsPath": "~/.claude/plugins/config/claude-for-legal/ai-governance-legal/ciktilar/",
+    "inventoryPath": "~/.claude/plugins/config/claude-for-legal/ai-governance-legal/ai-temas-envanteri.yaml",
+    "deadlinesPath": "~/.claude/plugins/config/claude-for-legal/ai-governance-legal/sure-takvimi.yaml"
+  },
+  "replaces": "ai-governance-legal",
+  "_replaces_note": "Bu eklenti, orijinal anthropic ai-governance-legal eklentisinin VATANDAŞ versiyonudur. Avukat odaklı işlevler (vendor-ai-review, AIA, use-case-triage) tamamen ters çevrildi; vatandaş savunma fonksiyonlarıyla değiştirildi."
+}

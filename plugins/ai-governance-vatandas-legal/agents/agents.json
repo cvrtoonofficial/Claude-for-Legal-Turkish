@@ -1,0 +1,50 @@
+{
+  "_comment": "Scheduled agent tanımları — install.sh scripti bunları mcp__scheduled-tasks__create_scheduled_task çağrılarına çevirir.",
+  "agents": [
+    {
+      "name": "tos-degisiklik-watcher",
+      "description": "Sınır ötesi platform TOS'larını haftalık tarar; AI klozlarındaki değişiklikleri raporlar.",
+      "schedule": {
+        "type": "cron",
+        "expression": "0 6 * * 1",
+        "timezone": "Europe/Istanbul",
+        "human_readable": "Her Pazartesi 09:00 (Türkiye saati)"
+      },
+      "definition_file": "agents/tos-degisiklik-watcher.md",
+      "tools": ["WebFetch", "mcp__workspace__bash", "mcp__cowork__create_artifact", "mcp__scheduled-tasks__list_scheduled_tasks"],
+      "enabled": true
+    },
+    {
+      "name": "kvkk-kurul-kararlari-sweeper",
+      "description": "KVKK Kurul kararlarını haftalık tarar; AI/otomatik karar/profilleme anahtarları içerenleri envanterle eşleştirir.",
+      "schedule": {
+        "type": "cron",
+        "expression": "0 6 * * 3",
+        "timezone": "Europe/Istanbul",
+        "human_readable": "Her Çarşamba 09:00 (Türkiye saati)"
+      },
+      "definition_file": "agents/kvkk-kurul-kararlari-sweeper.md",
+      "tools": ["mcp__yargi_mcp__search_kvkk_decisions", "mcp__yargi_mcp__get_kvkk_document_markdown", "mcp__cowork__create_artifact"],
+      "enabled": true
+    },
+    {
+      "name": "sure-takipcisi",
+      "description": "Tüm vatandaş süreçlerinin hak düşürücü ve zamanaşımı sürelerini günlük takip eder; T-14/7/3/1 uyarı.",
+      "schedule": {
+        "type": "cron",
+        "expression": "0 5 * * *",
+        "timezone": "Europe/Istanbul",
+        "human_readable": "Her gün 08:00 (Türkiye saati)"
+      },
+      "definition_file": "agents/sure-takipcisi.md",
+      "tools": ["Read", "Write", "mcp__cowork__create_artifact"],
+      "enabled": true,
+      "config": {
+        "uyari_esikleri": [14, 7, 3, 1, 0],
+        "adli_tatil_dikkate_al": true,
+        "hafta_sonu_kaydir": true,
+        "resmi_tatil_kaydir": true
+      }
+    }
+  ]
+}

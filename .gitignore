@@ -1,0 +1,70 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.classpath
+
+# Backup files
+*.bak
+*.backup
+*.orig
+
+# Build artifacts
+*.zip
+*.tar.gz
+
+# User-specific config (kişisel verileri yanlışlıkla commit etmeyi engelle)
+**/config-template/*.local.md
+**/config-template/*.user.md
+**/dogrulama-gunlugu.md
+**/ai-temas-envanteri.yaml
+**/sure-takvimi.yaml
+
+# Logs
+*.log
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+
+# Node
+node_modules/
+
+# Test outputs
+test-extract/
+tmp/
