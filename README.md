@@ -30,6 +30,8 @@ Anthropic'in `claude-for-legal` eklenti ailesinin **Türk hukukuna ve Türkçe u
 |---|---|---|---|
 | [`ai-governance-vatandas-legal`](./plugins/ai-governance-vatandas-legal) | AI sistemlerine karşı vatandaş haklarını koruma — KVKK m.11/g otomatik karar itirazı, FSEK m.21 + DSM m.4 opt-out, deepfake/ses klonu hukuki yol haritası, platform TOS tüketici denetimi | Vatandaş (avukat değil) | ✅ v1.0.0 |
 
+| [`kurumsal-legal-tr`](./plugins/kurumsal-legal-tr) | Türk hukuku eksenli kurumsal hukuk (M&A + Entity Management) eklentisi. TTK 6102 + BK 6098 + FSEK 5846 + SMK 6769 + KVKK 6698 + HMK 6100. Sanatçı/yapımcı/bireysel telif sahibi müvekkil profili için kalibre. UYAP atıf standardı + agresif ton. | Avukat / In-house danışman | ✅ v1.0.0 |
+
 *Yeni eklentiler bu listeye eklenecek.*
 
 ---
