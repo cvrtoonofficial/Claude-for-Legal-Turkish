@@ -1,73 +1,35 @@
 {
   "name": "kurumsal-legal-tr",
-  "displayName": "Kurumsal Hukuk — Türk & AB Versiyonu (TR)",
   "version": "1.0.0",
   "description": "Türk hukuku ana ekseninde, AB hukuku ikincil katmanıyla kurgulanmış kurumsal hukuk (M&A + Entity Management) eklentisi. Anthropic corporate-legal eklentisinin Türk uygulamasına uyarlanmış sürümü. TTK 6102, BK 6098, FSEK 5846, SMK 6769, KVKK 6698, HMK 6100 odaklı; sanatçı/yapımcı/bireysel telif sahibi müvekkil profili için kalibre edilmiş; UYAP atıf standardına bağlı; agresif risk tutumu.",
   "author": {
     "name": "Abdullah",
     "email": "theakambio@gmail.com"
   },
+  "homepage": "https://github.com/cvrtoonofficial/Claude-for-Legal-Turkish",
+  "repository": "https://github.com/cvrtoonofficial/Claude-for-Legal-Turkish",
   "license": "MIT",
   "category": "legal",
-  "tags": ["TTK", "BK", "FSEK", "SMK", "KVKK", "HMK", "MA", "due-diligence", "entity-management", "kurumsal", "Türk-hukuku", "AB-hukuku", "GDPR", "DSM", "EU-AI-Act", "UYAP", "sanatçı", "yapımcı", "TR", "Türkçe"],
-  "homepage": "https://github.com/cvrtoonofficial/Claude-for-Legal-Turkish",
-  "dependencies": {
-    "mcp": {
-      "required": ["yargi_mcp", "mevzuat_mcp"],
-      "recommended": ["literatur_mcp", "yoktez_mcp", "hukuk_rag", "markapatent_mcp"],
-      "optional": ["scheduled-tasks", "cowork"]
-    },
-    "skills_external": {
-      "turk-hukuk-legal": "cross-skill handoff için zorunlu tavsiye — yargi-yolu-secimi, dilekce-ihtarname, uyap-atif-formati, siure-hesap-motoru, docx-uretici, sanatci-sozlesme-inceleme",
-      "ai-governance-vatandas-legal": "AI sistem değerlendirmesi handoff için tavsiye",
-      "cocounsel-legal": "yüksek riskli dilekçelerde PAC-7 stres testi için tavsiye"
-    }
-  },
-  "commands": [
-    "cold-start-interview",
-    "customize",
-    "matter-workspace",
-    "ma-due-diligence",
-    "entity-compliance-tr",
-    "material-contract-schedule-tr",
-    "closing-checklist-tr",
-    "tabular-review-tr",
-    "written-consent-tr",
-    "board-minutes-tr",
-    "deal-team-summary-tr",
-    "integration-management-tr"
-  ],
-  "skills": [
-    "cold-start-interview",
-    "customize",
-    "matter-workspace",
-    "ma-due-diligence",
-    "entity-compliance-tr",
-    "material-contract-schedule-tr",
-    "closing-checklist-tr",
-    "tabular-review-tr",
-    "written-consent-tr",
-    "board-minutes-tr",
-    "deal-team-summary-tr",
-    "integration-management-tr"
-  ],
-  "agents": [
-    "ttk-m376-watcher",
-    "rekabet-kurulu-sweeper",
-    "ticaret-sicil-degisiklik-takipci"
-  ],
-  "hooks": [
-    "musteri-sirri-prehook",
-    "atif-dogrulama-prehook"
-  ],
-  "config": {
-    "configPath": "~/.claude/plugins/config/claude-for-legal/kurumsal-legal-tr/",
-    "sharedProfilePath": "~/.claude/plugins/config/claude-for-legal/company-profile.md",
-    "outputsPath": "~/.claude/plugins/config/claude-for-legal/kurumsal-legal-tr/ciktilar/",
-    "mattersPath": "~/.claude/plugins/config/claude-for-legal/kurumsal-legal-tr/matters/",
-    "deadlinesPath": "~/.claude/plugins/config/claude-for-legal/kurumsal-legal-tr/sure-takvimi.yaml",
-    "entityComplianceTrackerPath": "~/.claude/plugins/config/claude-for-legal/kurumsal-legal-tr/entity-compliance-tracker.yaml"
-  },
-  "replaces": "corporate-legal",
-  "_replaces_note": "Anthropic 'corporate-legal' eklentisinin Türk hukuku uyarlamasıdır. Delaware/ABD M&A pratiği yerine TTK 6102, BK 6098, FSEK 5846 odaklı yeniden inşa edildi. SerPK/Halka Açık Şirket modülü Türkiye'ye özel kalibre edilecek — şimdilik kapalı. Sanatçı/yapımcı müvekkil profili varsayılan. Agresif ton — HMK m.29 sınırı içinde."
+  "keywords": [
+    "TTK",
+    "BK",
+    "FSEK",
+    "SMK",
+    "KVKK",
+    "HMK",
+    "MA",
+    "due-diligence",
+    "entity-management",
+    "kurumsal",
+    "Turk-hukuku",
+    "AB-hukuku",
+    "GDPR",
+    "DSM",
+    "EU-AI-Act",
+    "UYAP",
+    "sanatci",
+    "yapimci",
+    "TR",
+    "Turkce"
+  ]
 }

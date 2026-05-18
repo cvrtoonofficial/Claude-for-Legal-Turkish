@@ -1,14 +1,12 @@
 {
   "name": "claude-for-legal-turkish",
-  "displayName": "Claude for Legal — Türkçe Eklentiler",
   "description": "Anthropic claude-for-legal eklenti ailesinin Türk hukukuna ve Türkçe uygulamaya uyarlanmış sürümleri.",
+  "version": "1.1.0",
   "owner": {
     "name": "Abdullah (cvrtoonofficial)",
     "email": "theakambio@gmail.com",
     "url": "https://github.com/cvrtoonofficial"
   },
-  "homepage": "https://github.com/cvrtoonofficial/Claude-for-Legal-Turkish",
-  "version": "1.1.0",
   "plugins": [
     {
       "name": "ai-governance-vatandas-legal",
@@ -16,7 +14,7 @@
       "description": "AI sistemlerine karşı Türk vatandaş haklarını koruma — KVKK m.11/g otomatik karar itirazı, FSEK m.21 + DSM m.4 opt-out, deepfake/ses klonu hukuki yol haritası, platform TOS tüketici denetimi.",
       "version": "1.0.0",
       "category": "legal",
-      "tags": ["KVKK", "FSEK", "AI", "vatandaş", "TR"]
+      "tags": ["KVKK", "FSEK", "AI", "vatandas", "TR"]
     },
     {
       "name": "kurumsal-legal-tr",
@@ -24,7 +22,7 @@
       "description": "Türk hukuku eksenli kurumsal hukuk (M&A + Entity Management). TTK 6102 + BK 6098 + FSEK 5846 + SMK 6769 + KVKK 6698 + HMK 6100. Sanatçı/yapımcı/bireysel telif sahibi müvekkil profili için kalibre. UYAP atıf standardı + agresif ton.",
       "version": "1.0.0",
       "category": "legal",
-      "tags": ["TTK", "M&A", "kurumsal", "FSEK", "SMK", "TR"]
+      "tags": ["TTK", "MA", "kurumsal", "FSEK", "SMK", "TR"]
     }
   ]
 }
