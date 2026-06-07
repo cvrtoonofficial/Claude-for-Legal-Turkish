@@ -4,6 +4,10 @@
       "type": "http",
       "url": "https://mevzuat.surucu.dev/mcp"
     },
+    "yargi_mcp_pro": {
+      "type": "http",
+      "url": "https://yargi-mcp-pro-production.up.railway.app/mcp"
+    },
     "yargi_mcp": {
       "type": "http",
       "url": "https://yargimcp.surucu.dev/mcp"
