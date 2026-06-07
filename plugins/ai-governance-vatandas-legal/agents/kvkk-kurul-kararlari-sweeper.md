@@ -14,7 +14,7 @@ KVKK Kurul kararları **idari yaptırım kararları**dır ama doktrinde ve emsal
 
 ## Akış
 
-1. **Çek:** `mcp__bafdf342-..__search_kvkk_decisions` ile son 7 gün
+1. **Çek:** `mcp__yargi_mcp__search_kvkk_decisions` ile son 7 gün
 2. **Filtre:** Aşağıdaki anahtar kelimelerden EN AZ BİRİ geçmeli:
    - "yapay zekâ" / "YZ" / "AI"
    - "otomatik karar" / "otomatik sistem"

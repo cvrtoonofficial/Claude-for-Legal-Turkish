@@ -53,8 +53,8 @@ Bu kavram tartışmalıdır. Skill aşağıdaki testi uygular:
 3. **`yargi_mcp` BDDK karar endpoint'i** (sektör finans ise) — `search_bddk_decisions`
 
 4. **`literatur_mcp` ve `yoktez_mcp`** — "münhasıran otomatik karar" "KVKK m.11/g" anahtar kelimeleriyle son 3 yıl doktrini:
-   - `mcp__417bcc1e-...__search_articles`
-   - `mcp__3f9cf426-...__search_yok_tez_detailed`
+   - `mcp__plugin_ai-governance-vatandas-legal_literatur_mcp__search_articles`
+   - `mcp__plugin_ai-governance-vatandas-legal_yoktez_mcp__search_yok_tez_detailed`
    - Doktrin özellikle "münhasıran" tanımının sınırlarını çiziyor
 
 5. **`hukuk_rag`** — Kullanıcı daha önce benzer başvuru yapmış mı? Şablon var mı?
